@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.h2db",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.wdqsoft.common.config.H2DBConfig",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "spring.datasource.mysqldb",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.wdqsoft.common.config.MysqlDBConfig",
+      "sourceMethod": "dataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
