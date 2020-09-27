@@ -95,6 +95,7 @@ public class AccountRealm extends AuthorizingRealm {
 //        if (object==null){
 //            throw new UnknownAccountException("登录异常！！！");
 //        }
+       //根据token中信息 判断 数据库中是否存在此对象
 //        TCmsManageuser tCmsManageuser=cmsUserService.selectById(Integer.valueOf(userid));
 //        CmsSysUser profile= cmsUserMapper.selectByPrimaryKey(Integer.valueOf(userid));
 //        Result result= cmsUserService.selectByIdFromOne(Integer.valueOf(userid));
@@ -125,11 +126,13 @@ public class AccountRealm extends AuthorizingRealm {
 
 //        user.setOid(userid);
 //        BeanUtils.copyProperties(tCmsManageuser,profile);
-
+// start   demo示例  如不使用 请注释掉
         AccountProfile profile=new AccountProfile();
         profile.setId(userid);
         profile.setLoginname("admin");
         profile.setIsavailable(1);
+// end   demo示例  如不使用 请注释掉   
+        
 //        System.out.println("-------"+profile.getId()+" -----"+profile.getRoleid()+"-----");
         System.out.println("-------认证结束 ----------");
         System.out.println("----end---jwt token ------end----");
