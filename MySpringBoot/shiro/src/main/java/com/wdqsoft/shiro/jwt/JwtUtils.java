@@ -23,8 +23,6 @@ public class JwtUtils {
     /**
      * token生成器
      * @param userId
-     * 为了区分系统  userid 的规范 后台管理系统  cms-userid
-     * 移动办公系统 moa-userid-username-loginname
      * @return
      */
     public String generateToken(String userId){
