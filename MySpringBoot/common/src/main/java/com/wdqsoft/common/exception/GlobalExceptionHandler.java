@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Slf4j
 @RestController
-@RestControllerAdvice(basePackages = {"com.sinosoft","com.sinosoft.common.jwt"})
+@RestControllerAdvice(basePackages = {"com.wdqsoft"})
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class GlobalExceptionHandler extends _BaseController {
 
