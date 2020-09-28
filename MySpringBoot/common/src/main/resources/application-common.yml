@@ -14,10 +14,10 @@ spring:
 
     h2db:
               driverClassName: org.h2.Driver
-              jdbc-url: jdbc:h2:file:C:/sinosofe_work/newoa/MobileWorkspace/workspace/moaroot/moa-api/src/main/resources/db/h2db/cmsdbh21;DB_CLOSE_DELAY=-1;FILE_LOCK=SOCKET
+              jdbc-url: jdbc:h2:file:C:/moa-api/src/main/resources/db/h2db/cmsdbh21;DB_CLOSE_DELAY=-1;FILE_LOCK=SOCKET
     #          jdbc-url: jdbc:h2:file:../db/h2db/cmsdbh2;DB_CLOSE_DELAY=-1;FILE_LOCK=SOCKET
-              username: sinosoft
-              password: sinosoft
+              username: 111
+              password: 111
               jpa:
                   database: h2
                   hibernate:
@@ -43,9 +43,9 @@ spring:
 jwtconfig:
   jwt:
     #  秘钥
-    secret: wdqwdqwdqwdqwdqwdqwdqwdqwdqwdq
+    secret: 22222221111111
     #    超时时间
     expire: 7200
     #    header名
     header: Authorization
-    asekey: sinosoftsinosoftsinosoftsinosoft
+    asekey: 1111111111111
