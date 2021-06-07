@@ -17,14 +17,14 @@ import javax.sql.DataSource;
 @Configuration
 //mapper接口文件  interface文件路径
 
-@MapperScan(basePackages = "com.sinosoft.dao.cmsdao.mapper.cmsdbh2"
+@MapperScan(basePackages = "com.wdqsoft.dao.cmsdao.mapper.cmsdbh2"
         ,sqlSessionTemplateRef = "h2dbSqlSessionTemplate")
 public class H2DBConfig {
     // mapper xml 文件路径   classpath*:mybatis/mapper/*/*Mapper.xml
 //    static final String MAPPER_LOCATION = "classpath: ./dao/src/main/resources/mybatis/mapper/cmsdbh2/*.xml";
     static final String MAPPER_LOCATION = "classpath*:mybatis/mapper/*/*Mapper.xml";
     // 实体类存放位置
-    static final String TypeAliasesPackage="com.sinosoft.common.entity.cmsdbh2";
+    static final String TypeAliasesPackage="com.wdqsoft.common.entity.cmsdbh2";
 
     /**
      * 初始化数据库 创建数据源
